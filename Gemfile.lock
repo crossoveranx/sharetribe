@@ -546,7 +546,7 @@ GEM
     ruby-vips (2.0.14)
       ffi (~> 1.9)
     ruby_dep (1.5.0)
-    rubyzip (1.3.0)
+    rubyzip (1.2.4)
     safe_yaml (1.0.5)
     sass (3.4.24)
     sass-rails (5.0.6)
@@ -745,12 +745,8 @@ DEPENDENCIES
   rspec-rails (~> 3.8.2)
   rspec_junit_formatter
   rubocop (~> 0.67.2)
-<<<<<<< HEAD
   rubocop-performance
   rubyzip (~> 1.2.2)
-=======
-  rubyzip (~> 1.3.0)
->>>>>>> 0c5e7a32cb9dfea96571a1cc307fbc286eed510b
   sass (~> 3.4.24)
   sass-rails (~> 5.0.6)
   selenium-webdriver (~> 3.141.0)
