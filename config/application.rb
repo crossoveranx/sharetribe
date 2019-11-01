@@ -197,12 +197,9 @@ module Kassi
             "expires" => APP_CONFIG.s3_cache_max_age.to_i.seconds.from_now.httpdate,
         },
         :s3_credentials => {
-              #:bucket            => APP_CONFIG.s3_bucket_name,
-              #:access_key_id     => APP_CONFIG.aws_access_key_id,
-              #:secret_access_key => APP_CONFIG.aws_secret_access_key
-              :bucket            => 'homewerk',
-              :access_key_id     => 'AKIAITAOT32MA46ZUMZA',
-              :secret_access_key => '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'
+              :bucket            => APP_CONFIG.s3_bucket_name,
+              :access_key_id     => APP_CONFIG.aws_access_key_id,
+              :secret_access_key => APP_CONFIG.aws_secret_access_key
         }
       })
 
