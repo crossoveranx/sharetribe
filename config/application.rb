@@ -198,10 +198,8 @@ module Kassi
         },
         :s3_credentials => {
               :bucket            => APP_CONFIG.s3_bucket_name,
-              #:access_key_id     => APP_CONFIG.aws_access_key_id,
-              #:secret_access_key => APP_CONFIG.aws_secret_access_key
-              :access_key_id     => Rails.application.credentials.aws[:access_key_id],
-              :secret_access_key => Rails.application.credentials.aws[:secret_access_key]
+              :access_key_id     => APP_CONFIG.aws_access_key_id,
+              :secret_access_key => APP_CONFIG.aws_secret_access_key
         }
       })
 
