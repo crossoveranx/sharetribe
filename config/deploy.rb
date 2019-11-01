@@ -28,7 +28,7 @@ append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bund
 # You can configure the Airbrussh format using :format_options.
 # These are the defaults.
 # set :format_options, command_output: true, log_file: "log/capistrano.log", color: :auto, truncate: :auto
-
+set :npm_method, 'install'                               # default
 # Default value for :pty is false
 # set :pty, true
 set :linked_files, %w{config/master.key}
