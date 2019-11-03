@@ -1,4 +1,4 @@
-class CreateItems < ActiveRecord::Migration
+class CreateItems < ActiveRecord::Migration[5.0]
   def self.up
     create_table :items do |t|
       t.string :owner_id
