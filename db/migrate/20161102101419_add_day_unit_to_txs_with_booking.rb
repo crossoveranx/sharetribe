@@ -1,4 +1,4 @@
-class AddDayUnitToTxsWithBooking < ActiveRecord::Migration
+class AddDayUnitToTxsWithBooking < ActiveRecord::Migration[5.2]
 
   # We have some rows in `transactions` table that do not have unit_type
   #

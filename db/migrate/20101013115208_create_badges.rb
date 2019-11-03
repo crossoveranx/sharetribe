@@ -1,4 +1,4 @@
-class CreateBadges < ActiveRecord::Migration
+class CreateBadges < ActiveRecord::Migration[5.2]
   def self.up
     create_table :badges do |t|
       t.string :person_id

@@ -1,4 +1,4 @@
-class AddLogoUrlToCommunities < ActiveRecord::Migration[5.1]
+class AddLogoUrlToCommunities < ActiveRecord::Migration[5.2][5.1]
   def change
     add_column :communities, :logo_link, :string
   end

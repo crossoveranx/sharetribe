@@ -1,4 +1,4 @@
-class ChangeBlacklistedUsernames < ActiveRecord::Migration
+class ChangeBlacklistedUsernames < ActiveRecord::Migration[5.2]
   
   def up
     blacklisted_usernames_in_database.each do |blacklisted_username|

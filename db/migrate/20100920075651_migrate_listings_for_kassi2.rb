@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-class MigrateListingsForKassi2 < ActiveRecord::Migration
+class MigrateListingsForKassi2 < ActiveRecord::Migration[5.2]
   def self.up
     unclear_cases_count = 0
     unknown_categories_count = 0

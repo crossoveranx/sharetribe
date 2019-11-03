@@ -1,4 +1,4 @@
-class AddStatusToFavor < ActiveRecord::Migration
+class AddStatusToFavor < ActiveRecord::Migration[5.2]
   def self.up
     add_column :favors, :status, :string, :default => "enabled"
   end

@@ -1,4 +1,4 @@
-class AddLocaleToPerson < ActiveRecord::Migration
+class AddLocaleToPerson < ActiveRecord::Migration[5.2]
   def self.up
     add_column :people, :locale, :string, :default => "fi"
   end

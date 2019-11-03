@@ -1,4 +1,4 @@
-class CreateTableGroupsListings < ActiveRecord::Migration
+class CreateTableGroupsListings < ActiveRecord::Migration[5.2]
   def self.up
     create_table :groups_listings, :id => false do |t|
       t.string :group_id

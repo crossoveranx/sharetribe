@@ -1,4 +1,4 @@
-class AddLastTransitionAtToTransaction < ActiveRecord::Migration
+class AddLastTransitionAtToTransaction < ActiveRecord::Migration[5.2]
   def up
     add_column(:transactions, :last_transition_at, :datetime)
   end

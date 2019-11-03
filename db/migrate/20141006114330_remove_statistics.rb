@@ -1,4 +1,4 @@
-class RemoveStatistics < ActiveRecord::Migration
+class RemoveStatistics < ActiveRecord::Migration[5.2]
   def up
     drop_table(:statistics)
   end

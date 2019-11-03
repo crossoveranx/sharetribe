@@ -1,4 +1,4 @@
-class RemoveAccountNumberFromBraintreeAccounts < ActiveRecord::Migration
+class RemoveAccountNumberFromBraintreeAccounts < ActiveRecord::Migration[5.2]
   def up
     remove_column :braintree_accounts, :account_number
   end

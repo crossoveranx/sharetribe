@@ -1,4 +1,4 @@
-class CopyCommunityIdFromPeopleToEmails < ActiveRecord::Migration
+class CopyCommunityIdFromPeopleToEmails < ActiveRecord::Migration[5.2]
   def up
     exec_update(
       ["UPDATE emails e",

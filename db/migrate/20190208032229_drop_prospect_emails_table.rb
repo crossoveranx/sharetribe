@@ -1,4 +1,4 @@
-class DropProspectEmailsTable < ActiveRecord::Migration[5.1]
+class DropProspectEmailsTable < ActiveRecord::Migration[5.2][5.1]
   def up
     drop_table :prospect_emails
   end

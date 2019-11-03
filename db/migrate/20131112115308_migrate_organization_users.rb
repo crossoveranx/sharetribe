@@ -1,4 +1,4 @@
-class MigrateOrganizationUsers < ActiveRecord::Migration
+class MigrateOrganizationUsers < ActiveRecord::Migration[5.2]
 
   def up
     Organization.all.each do |organization|

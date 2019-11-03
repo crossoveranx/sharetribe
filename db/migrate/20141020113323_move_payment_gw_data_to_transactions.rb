@@ -1,4 +1,4 @@
-class MovePaymentGwDataToTransactions < ActiveRecord::Migration
+class MovePaymentGwDataToTransactions < ActiveRecord::Migration[5.2]
   def up
     execute(<<-EOQ)
        UPDATE transactions t

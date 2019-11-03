@@ -1,4 +1,4 @@
-class RemovePayments < ActiveRecord::Migration
+class RemovePayments < ActiveRecord::Migration[5.2]
 
   def up
     drop_table "payments"

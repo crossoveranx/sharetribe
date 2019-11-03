@@ -1,4 +1,4 @@
-class AddMoreSeoTagSettingsToCommunityCustomizations < ActiveRecord::Migration[5.1]
+class AddMoreSeoTagSettingsToCommunityCustomizations < ActiveRecord::Migration[5.2][5.1]
   def change
     add_column :community_customizations, :search_meta_title, :string
     add_column :community_customizations, :search_meta_description, :text

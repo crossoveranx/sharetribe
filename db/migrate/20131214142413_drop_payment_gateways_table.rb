@@ -1,4 +1,4 @@
-class DropPaymentGatewaysTable < ActiveRecord::Migration
+class DropPaymentGatewaysTable < ActiveRecord::Migration[5.2]
   def up
     drop_table :payment_gateways
   end

@@ -1,4 +1,4 @@
-class CreateCommunitySocialLogos < ActiveRecord::Migration[5.1]
+class CreateCommunitySocialLogos < ActiveRecord::Migration[5.2][5.1]
   def change
     create_table :community_social_logos do |t|
       t.references :community

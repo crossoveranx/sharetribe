@@ -1,4 +1,4 @@
-class AddTimestampToTransactionTransitions < ActiveRecord::Migration
+class AddTimestampToTransactionTransitions < ActiveRecord::Migration[5.2]
   def up
     change_table(:transaction_transitions) do |t|
       t.timestamps

@@ -1,4 +1,4 @@
-class AddAttachmentFaviconToCommunities < ActiveRecord::Migration
+class AddAttachmentFaviconToCommunities < ActiveRecord::Migration[5.2]
   def self.up
     change_table :communities do |t|
       t.attachment :favicon
