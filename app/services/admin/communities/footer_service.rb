@@ -8,11 +8,11 @@ class Admin::Communities::FooterService
   end
 
   def plan_footer_disabled?
-    if plan
-      !plan[:features][:footer] ? true : nil
-    else
+    #if plan
+    #  !plan[:features][:footer] ? true : nil
+    #else
       false
-    end
+    #end
   end
 
   def footer_menu_links # rubocop:disable Rails/Delegate
