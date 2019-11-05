@@ -25,6 +25,11 @@ append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bund
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 
+##ADDED CONFIG FILE POSSIBLY REMOVE
+set :linked_files, %w{config/config.yml}
+
+
+
 # You can configure the Airbrussh format using :format_options.
 # These are the defaults.
 # set :format_options, command_output: true, log_file: "log/capistrano.log", color: :auto, truncate: :auto
