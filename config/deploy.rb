@@ -28,7 +28,7 @@ append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bund
 ##ADDED CONFIG FILE POSSIBLY REMOVE
 set :linked_files, %w{config/config.yml}
 
-
+set :linked_files, %w{config/application.yml}
 
 # You can configure the Airbrussh format using :format_options.
 # These are the defaults.
