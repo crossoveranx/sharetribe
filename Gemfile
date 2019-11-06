@@ -31,7 +31,7 @@ gem 'rest-client', '~> 2.0.2'
 
 gem 'paperclip', '~> 6.0.0'
 gem 'delayed_paperclip', '~> 3.0.1'
-
+gem 'daemons'
 # Active Storage
 gem 'image_processing', '~> 1.9.3'
 gem 'mini_magick', '~> 4.9.5'
