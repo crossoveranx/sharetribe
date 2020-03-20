@@ -10,7 +10,7 @@ set :repo_url, "git@github.com:crossoveranx/sharetribe.git"
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
-set :rvm_ruby_version, '2.6.2'
+set :rvm_ruby_version, '2.6.5'
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/homewerksharetribe/#{fetch :application}"
