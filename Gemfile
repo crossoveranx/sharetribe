@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.6.2'
+ruby '2.6.5'
 
 gem 'rails', '5.2.3'
 
@@ -78,7 +78,8 @@ gem 'mercury-rails',
 gem 'countries', '~> 2.0.8'
 gem "mail_view", '~> 2.0.4'
 gem 'statesman', '~> 2.0.1'
-gem "premailer", '~> 1.10.4'
+gem "premailer-rails", '~> 1.10.3'
+gem "css_parser", '~> 1.7.0'
 gem 'stringex', '~> 2.7.1'
 gem 'paypal-sdk-permissions', '~> 1.96.4'
 gem 'paypal-sdk-merchant', '~> 1.116.0'
@@ -98,7 +99,6 @@ gem 'faraday-encoding', '~> 0.0.4'
 
 gem "react_on_rails", ">= 11.3.0"
 
-gem "css_parser", '~> 1.5.0'
 gem 'sitemap_generator', '~> 5.3.1'
 
 gem "i18n-js", '~> 3.0.0'
@@ -154,7 +154,7 @@ group :test do
   # required for CircleCI automatic test balancing
   gem 'rspec_junit_formatter'
 
-  gem 'fake_stripe', git: 'https://github.com/ithouse/fake_stripe.git', ref: '42b9dd09a1db3fb2b7ec11809ac93647f178a115'
+  gem 'fake_stripe', git: 'https://github.com/ithouse/fake_stripe.git', ref: '56fe73dc420d161ecf9842739af7d857031ca1b2'
   gem 'poltergeist'
   gem 'puma'
   gem 'webdrivers'
@@ -185,3 +185,6 @@ gem 'biz'
 gem 'ffi', '>= 1.9.25'
 gem 'rubyzip', '~> 1.2.2'
 gem 'bootsnap', require: false
+gem "select2-rails"
+gem "cocoon"
+gem "fast-polylines"

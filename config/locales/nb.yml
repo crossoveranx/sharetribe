@@ -193,7 +193,7 @@ nb:
         en: Engelsk
         en-AU: "Engelsk (Australia)"
         en-GB: "Engelsk (Storbritannia)"
-        es: ~
+        es: Spansk
         es-ES: ~
         fi: Finsk
         fr: Fransk
@@ -234,6 +234,7 @@ nb:
         miles: miles
         show_only_nearby: "Vis kun annonser i nærområdet med stedssøk"
         allow_users_to_add_location: ~
+        fuzzy_location: ~
         listing_preferences: Annonseinnstillinger
         transaction_preferences: Transaksjonsinnstillinger
         show_listing_publishing_date: "Vis dato annonsen ble publisert"
@@ -260,7 +261,7 @@ nb:
         last_community_updates: "Vær obs på at det er mulig at du og brukerne dine vil motta en siste nyhetsmelding fra markedsplassen."
         you_will_be_redirected_to: "Etter du har slettet markedsplassen din vil du bli videresendt til %{destination}. Du vil ikke kunne få tilgang til markedsplassen din mer."
         delete_this_marketplace: "Slett denne markedsplassen"
-        payment_preferences: ~
+        payment_preferences: Betalingssystem
         pre_approved_listings: ~
         email_admins_about_new_transactions: ~
       manage_members:
@@ -279,6 +280,10 @@ nb:
         ban_user_confirmation: "Dette fjerner bruker fra denne markedsplassen og hindrer vedkommende tilgang med denne bruker kontoen igjen. Er du sikker på at du ønsker å fortsette?"
         unban_user_confirmation: ~
         ban_me_error: "Du kan ikke forby deg selv."
+        have_ongoing_transactions: ~
+        only_delete_disabled: ~
+        delete_info1: ~
+        delete_info2: ~
         search: ~
         search_by_name_email: ~
         reset_search: ~
@@ -298,6 +303,7 @@ nb:
         unconfirmed_user: ~
         resend: ~
         cancel: ~
+        confirm: ~
         user_didnt_complete_the_signup_process: ~
         pending_user: ~
       new_layout:
@@ -307,6 +313,7 @@ nb:
         enabled_for_all: "Tilgjengelig for alle"
         new_topbar: "Ny toppmeny (synlig på alle sider)"
         searchpage: "Ny søkeside (krever toppmeny)"
+        new_email_templates: ~
       social_media:
         social_media: "Sosiale medier"
         logo: ~
@@ -334,7 +341,6 @@ nb:
         invalid_facebook_connect_secret: "Client secret kan kun inneholde tall og bokstaver fra a til f."
         enable_facebook_login: ~
         save: "Lagre innstillinger"
-        add_another_image: ~
         google_connect: ~
         google_instructions_link_text: ~
         google_developers_console: ~
@@ -397,6 +403,10 @@ nb:
         robots_info: ~
         robots_info_link_text: ~
         robots_info_2: ~
+        google_search_console: ~
+        google_search_console_paragraph1: ~
+        google_search_console_these_instructions: ~
+        google_search_console_paragraph2: ~
         save: ~
       analytics:
         analytics: Analytics
@@ -409,6 +419,10 @@ nb:
         sharetribe_analytics_instructions_link_text: ~
         end_user_analytics: ~
         save: "Lagre innstillinger"
+        google_tag_manager: ~
+        gtm_paragraph_1: ~
+        gtm_paragraph_2: ~
+        learn_how_to_configure_gtm: ~
       logo_link:
         title: ~
         info: ~
@@ -457,10 +471,13 @@ nb:
           confirmed: ~
           paid: ~
           canceled: ~
+          disputed: ~
           preauthorized: ~
           rejected: ~
           payment_intent_requires_action: ~
           payment_intent_action_expired: ~
+          refunded: ~
+          dismissed: ~
         headers:
           conversation: "Samtale tråd"
           listing: Annonse
@@ -480,21 +497,25 @@ nb:
           paid: Betalt
           confirmed: Bekreftet
           canceled: Avbrutt
+          disputed: ~
           initiated: "Venter på PayPal betaling"
           pending_ext: "Venter på PayPal betaling"
           none:
-            free: ~
+            free: "Gratis transaksjon"
           paypal:
-            free: ~
-            pending: ~
-            preauthorized: ~
-            accepted: ~
-            rejected: ~
-            paid: ~
-            confirmed: ~
-            canceled: ~
+            free: Samtale
+            pending: Venter
+            preauthorized: Forhåndsgodkjent
+            accepted: Akseptert
+            rejected: Avvist
+            paid: Betalt
+            confirmed: Fullført
+            canceled: Avbrutt
+            disputed: ~
             initiated: ~
             pending_ext: ~
+            refunded: ~
+            dismissed: ~
           stripe:
             free: ~
             pending: ~
@@ -504,16 +525,19 @@ nb:
             paid: ~
             confirmed: ~
             canceled: ~
-            initiated: ~
-            pending_ext: ~
+            disputed: ~
+            initiated: "Venter Stripebetaling"
+            pending_ext: "Venter Stripebetaling"
             payment_intent_requires_action: ~
             payment_intent_action_expired: ~
             payment_intent_failed: ~
+            refunded: ~
+            dismissed: ~
         not_available: "Ikke tilgjengelig"
       conversations:
         conversations: ~
         headers:
-          started_from: ~
+          started_from: "Start fra"
           status: ~
           started: ~
           last_activity: ~
@@ -647,36 +671,33 @@ nb:
         contact_us: ~
         you_can_now_use_a_custom_domain: ~
         would_you_like_to_change_domain: ~
+        change_your_sharetribe_domain: ~
+        only_letters_numbers_and_hyphens_can_be_used: ~
+        when_you_change_your_sharetribe_domain: ~
+        would_you_like_to_proceed: ~
+        change: ~
       landing_pages:
         landing_pages: ~
         info_1: ~
         info_2: ~
-        info_2_preview_text: ~
-        info_2_details_text: ~
-        info_2_design_text: ~
+        info_2_help_center: ~
         info_3: ~
         info_4: ~
         editor_title: ~
         editor_info: ~
         preview: ~
         set_live: ~
-        headers:
-          section_id: ~
-          section_type: ~
-          version: ~
-          released: ~
-        add_new_version: ~
-        new_version: ~
-        edit_version: ~
         add_new_section: ~
         select_section_type: ~
+        this_version_is_not_released: ~
+        latest_version_released: ~
+        check_it_out: ~
         form:
-          version: ~
           save: ~
+          cancel: ~
         sections:
           identifier: ~
           kind: ~
-          variation: ~
           new: ~
           edit: ~
           remove_section_confirmation: ~
@@ -690,8 +711,6 @@ nb:
           video: ~
           new_section:
             categories: ~
-            footer: ~
-            hero: ~
             info_single_column: ~
             info_multi_column_2: ~
             info_multi_column_3: ~
@@ -708,11 +727,17 @@ nb:
             listings: ~
             locations: ~
             video: ~
+      attachments:
+        delete: ~
+        or_change: ~
     landing_page_versions:
       sections:
+        content:
+          title: ~
         hero:
           hero_title: ~
           hero_description: ~
+          basic_details_tab: ~
         footer:
           footer_title: ~
           footer_style: ~
@@ -725,6 +750,10 @@ nb:
           cta_enabled: ~
           cta_text: ~
           cta_url: ~
+          text_placeholder: ~
+          url_placeholder: ~
+        background_selector:
+          title: ~
         background_image_overlay:
           background_image: ~
           background_image_info: ~
@@ -785,6 +814,7 @@ nb:
           main_title: ~
           column_header: ~
           column_title: ~
+          web_viewer: ~
           column_icon_info: ~
           column_icon: ~
           column_paragraph: ~
@@ -792,14 +822,15 @@ nb:
           column_button_text: ~
           column_button_url: ~
         listings:
+          listings_to_feature: ~
           you_need_to_add_the_listing_ids: ~
         video:
           text: ~
-          youtube_video_id: ~
           autoplay: ~
           autoplay_no: ~
           autoplay_muted: ~
           info: ~
+          youtube_video_id_info: ~
     custom_fields:
       edit:
         edit_listing_field: "Rediger annonse felt'%{field_name}'"
@@ -885,17 +916,17 @@ nb:
         send_email_to_members: "Send e-post til brukere"
         send_email_to_members_title: "Send e-post til alle brukere"
         send_email: "Send epost"
-        send_email_or: ~
-        send_test_email: ~
+        send_email_or: eller
+        send_test_email: "Send en e-post til deg selv"
         test_sent: ~
-        send_email_article_title: ~
+        send_email_article_title: "denne artikkelen"
         send_email_article_text: ~
         recipients:
           title: ~
           options:
-            all_users: ~
+            all_users: "Alle brukere"
             posting_allowed: ~
-            with_listing: ~
+            with_listing: "Brukere som har postet minst én annonse"
             with_listing_no_payment: ~
             with_payment_no_listing: ~
             no_listing_no_payment: ~
@@ -1135,6 +1166,8 @@ nb:
         waiting_for_fulfill_and_complete: ~
         buyer: ~
         provider: ~
+        delivery: ~
+        shipping_to: ~
         buyer_pays: ~
         marketplace_collects: ~
         buyer_service_fee_label: ~
@@ -1142,6 +1175,8 @@ nb:
         provider_receives: ~
         admin_info_text: ~
         manage_reviews: ~
+        you_should_investigate: ~
+        learn_more: ~
   common:
     edit_page: "Rediger side"
     default_community_slogan: Markedsplass
@@ -1233,9 +1268,7 @@ nb:
       stripe-fee_label: ~
     confirm:
       confirm_description: "Dersom din forespørsel er utført, må du bekrefte den som utført. Du kan så gi vurdering av den andre parten."
-      cancel_description: |-
-          Dersom din forespørsel ikke ble møtt, kan du merke den som "ikke hendt".
-          Du kan likevel gi vurdering av den andre og beskrive hva som skjedde.
+      cancel_description_team: ~
       cancel_payed_description: "Dersom din forespørsel ble møtt, men du angrer deg, kan du fremdeles avbryte forespørsel før betaling."
       canceling_payed_transaction: "Avbryt transaksjon"
       confirm: "Merk som ferdig"
@@ -1282,8 +1315,12 @@ nb:
       payment_preauthorized_wo_sum: ~
       stripe:
         held_payment: ~
-        held_payment_wo_sum: ~
-        confirmed_request: ~
+        held_payment_wo_sum: "Godtok forespørselen. Betalingen holdes hos %{service_name} frem til handelen er markert som fullført."
+        confirmed_request: "Markerte handelen som fullført. Betalingen har allerede blitt overført til %{author_name} sin bankkonto eller vil bli overført snart."
+      canceled_the_order: ~
+      marked_as_refunded: ~
+      dismissed_the_cancellation: ~
+      payment_has_now_been_transferred: ~
     new:
       message: Melding
       message_to: "Melding til %{author_name}"
@@ -1358,6 +1395,18 @@ nb:
           verify: "Venter på at du skal verifisere din PayPal konto"
       stripe:
         waiting_confirmation_from_requester: ~
+      order_canceled: ~
+      waiting_for_marketplace_review: ~
+      marketplace_notified: ~
+      contact_them: ~
+      refunded: ~
+      dismissed: ~
+      order_refunded: ~
+      you_should_receive_refund_soon: ~
+      issue_with_the_refund: ~
+      do_you_disagree: ~
+      contact_the_marketpalce_team: ~
+      order_cancellation_dismissed: ~
     status_link:
       accept_offer: "Godta tilbud"
       accept_request: "Godta forespørsel"
@@ -1369,6 +1418,8 @@ nb:
       reject_preauthorized_request: "Ikke denne gang"
       confirm: "Merk som ferdig"
       cancel: Tvist
+      mark_as_refunded: ~
+      dismiss: ~
   feedback:
     feedback_subject: "Ny tilbakemelding fra %{service_name}"
     feedback_body: "%{author_name_and_email} har sendt følgende tilbakemelding fra %{service_name}"
@@ -1414,11 +1465,17 @@ nb:
       if_will_not_happen_you_should_cancel: "Hvis du tror denne forespørselen ikke vil bli fullført av en eller annen grunn, kan du %{cancel_it_link}."
       cancel_it_link_text: "Avbryt den"
       automatic_confirmation: "Dersom du ikke bekrefter eller avbryter forespørselen innen %{days_to_automatic_confirmation} dager etter forespørselen ble akseptert, blir den automatisk merket som gjennomført."
+    confirm_reminder_v2:
+      headline: ~
+      you_have_not_yet_confirmed_or_canceled_request: ~
     payment_settings_reminder:
       remember_to_add_payment_details: "Husk å legge til din betalingsinformasjon slik at du kan motta betalinger."
       you_have_added_listing_with_payment: "Du har lagt til annonsen %{listing_link} med betaling, men du har ikke lagt til dine utbetalingsdetaljer enda. For å kunne motta betaling, må du legge til din utbetalingsinformasjon."
       please_go_to_payment_settings: "Vennligst gå til %{payment_settings_link} og fyll inn nødvendig betalingsinformasjon."
       payment_settings_link: betalingsinnstillinger
+    payment_settings_reminder_v2:
+      fill_payout_details: ~
+      you_have_added_listing_with_payment: ~
     transaction_confirmed:
       here_is_a_message_from: "Her er en melding fra %{other_party_given_name}:"
       request_marked_as_confirmed: "Forespørsel gjennomført - husk å gi vurdering"
@@ -1430,12 +1487,24 @@ nb:
       stripe:
         has_marked_request_as_confirmed: ~
       team_title: ~
+    transaction_confirmed_v2:
+      headline_confirmed: ~
+      headline_canceled: ~
+      stripe:
+        has_marked_request_as_confirmed: ~
+      can_give_feedback: ~
+      team_title: ~
     transaction_automatically_confirmed:
       subject: "Forespørsel er automatisk merket som gjennomført - husk å gi vurdering"
       we_have_marked_request_as_confirmed: "Vi har merket forespørselen vedrørende %{request} som fullført. Forespørselen ble automatisk fullført fordi %{days_passed} dager er passert siden forespørselen ble akseptert."
+    transaction_automatically_confirmed_v2:
+      we_have_marked_request_as_confirmed: ~
+      order_automatically_confirmed: ~
     booking_transaction_automatically_confirmed:
       subject: "Forespørsel er automatisk merket som gjennomført - husk å gi vurdering"
       we_have_marked_request_as_confirmed: "Vi har markert forespørselen om '%{request}' som fullført. Forespørselen ble automatisk fullført fordi en dag har gått siden booking-perioden ble avsluttet."
+    booking_transaction_automatically_confirmed_v2:
+      order_automatically_confirmed: ~
     automatically_confirmed_footer:
       giving_feedback_is_good_idea: |-
           Du kan nå gi vurdering av %{other_party_given_name}. Å gi vurdering er alltid en god idé. Dersom alt gikk fint, bør du la andre få vite
@@ -1447,8 +1516,13 @@ nb:
       need_to_confirm: "Du må bekrefte din e-post."
       confirmation_link_text: "Bekreft min e-post"
       or_paste_link: "Alternativt kan du kopiere lenken under til nettleseren din:"
+    confirmation_instructions_v2:
+      headline: ~
+      need_to_confirm: ~
+      confirmation_link_text: ~
     common:
       hey: "Hei %{name}!"
+      hi: ~
       kassi_team: "Vennlig hilsen %{service_name}"
       thanks: "Takk,"
       dont_want_to_receive_these_emails: "Ønsker du ikke å motta e-poster?"
@@ -1460,6 +1534,7 @@ nb:
       unsubscribe_from_these_emails: "meld deg av slike e-poster"
       unsubscribe_from_invitation_emails_info: ~
       unsubscribe_from_invitation_emails: ~
+      here_is_your_receipt: ~
     conversation_status_changed:
       has_accepted_your_offer: "%{accepter} har godtatt ditt tilbud %{listing}."
       has_accepted_your_request: "%{accepter} har godtatt din forespørsel %{listing}."
@@ -1473,12 +1548,19 @@ nb:
       you_can_now_pay_to: "Du kan nå betale forespurte beløp til %{payment_receiver}"
       pay_now: "Betal nå"
       remember_to_confirm: "Når en forespørsel er gjennomført, husk å merke den som gjennomført. Dersom en forespørsel ikke er gjennomført har du %{days_to_automatic_confirmation} dager på å avbryte den. Om ikke blir den automatisk merket som gjennomført."
+    conversation_status_changed_v2:
+      has_accepted_your_request: ~
+      has_accepted_your_request_text: ~
+      has_rejected_your_request: ~
+      has_rejected_your_request_text: ~
     invitation_to_kassi:
       hi: Hei!
       you_have_been_invited_to_kassi: "%{inviter} har invitert deg til %{service_name}."
       here_is_a_message_from: "Her er en personlig melding fra %{inviter}:"
       join_now: "Bli medlem nå"
       invitation_code: "Invitasjons kode: %{code}"
+    invitation_to_kassi_v2:
+      headline: ~
     new_comment:
       has_commented_your_listing_in_kassi: "%{author} har kommentert på din annonse %{listing}"
       view_comment: "Vis kommentar"
@@ -1489,6 +1571,9 @@ nb:
       view_message: "Vis melding"
       has_sent_you_a_message_in_kassi: "%{sender} har sendt deg en melding på %{service_name}."
       you_have_a_new_message: "Ny melding på %{service_name} fra %{sender_name}"
+    new_message_v2:
+      headline: ~
+      reply: ~
     new_payment:
       new_payment: "Du har mottatt en ny betaling"
       price_per_unit_type: "Pris per %{unit_type}"
@@ -1510,6 +1595,10 @@ nb:
       you_have_received_new_payment: ~
       stripe:
         you_have_received_new_payment: ~
+    payment_receipt_to_seller_v2:
+      headline: ~
+      main_text_stripe: ~
+      price_breakdown: ~
     payment_receipt_to_payer:
       receipt_of_payment: ~
       you_have_made_new_payment: ~
@@ -1525,6 +1614,9 @@ nb:
       stripe_gateway_fee: ~
       paypal_gateway_fee: ~
       money_will_be_transferred: ~
+    payment_receipt_to_payer_v2:
+      headline: ~
+      you_have_made_new_payment: ~
     paypal_new_payment:
       paypal_gateway_fee: "PayPal-kostnad:"
       shipping_total: "Frakt:"
@@ -1554,6 +1646,8 @@ nb:
       has_given_you_feedback_in_kassi: "%{name} har gitt deg tilbakemelding på %{service_name}"
       you_can_give_feedback_to: "Du har ikke gitt tilbakemelding til %{name} ennå."
       view_feedback: "Vis vurdering"
+    new_testimonial_v2:
+      headline: ~
     new_update_to_listing:
       listing_you_follow_has_been_updated: "En annonse du følger er oppdatert"
       has_updated_listing_you_follow_in_kassi: "%{author} har oppdatert annonsen '%{listing}' du følger på %{service_name}."
@@ -1569,6 +1663,8 @@ nb:
       reduce_email_footer_text: "For mange e-poster?%{settings_link} eller %{unsubscribe_link}."
       settings_link_text: "Rediger dine e-post innstillinger her"
       unsubscribe_link_text: avmeld
+    community_updates_v2:
+      headline: ~
     newsletter:
       hi: "Hei %{name},"
       newest_offers: "Hva folk for øyeblikket tilbyr"
@@ -1580,6 +1676,10 @@ nb:
     testimonial_reminder:
       remember_to_give_feedback_to: "Påminnelse: husk å gi tilbakemelding til %{name}"
       you_have_not_given_feedback_yet: "Du har ennå ikke gitt tilbakemelding til %{name} om '%{event}'. Husk å gi tilbakemelding på hvordan %{given_name} oppførte seg."
+    testimonial_reminder_v2:
+      headline: ~
+      you_have_not_given_feedback_yet: ~
+      leave_feedback: ~
     transaction_preauthorized:
       subject: "%{requester} har etterspurt og betalt for %{listing_title}"
       transaction_requested_by_user: "%{requester} har etterspurt og betalt for %{listing_title}"
@@ -1588,11 +1688,16 @@ nb:
       if_you_do_accept_stripe: ~
       if_you_do_not_accept: "Hvis du avslår forespørselen eller ikke aksepterer den innen denne tidsfristen, vil transaksjonen bli avbrutt automatisk. %{requester} vil ikke bli belastet, og du vil ikke få betalt."
       click_here_to_reply: "Klikk her for å svare på forespørselen"
+    transaction_preauthorized_v2:
+      headline: ~
     transaction_preauthorized_reminder:
       subject: "Husk å akseptere forespørselen fra %{requester} vedrørende %{listing_title}"
       remember_to_accept: "Husk å akseptere forespørselen fra %{requester} vedrørende %{listing_title}. %{requester} har allerede betalt. Du må akseptere forespørselen for å kunne motta betaling."
       one_day_left: "Dersom du ikke aksepterer forespørselen innen èn dag blir den automatisk avvist og du blir ikke betalt."
       click_here_to_reply: "Klikk her for å svare på forespørselen"
+    transaction_preauthorized_reminder_v2:
+      headline: ~
+      remember_to_accept: ~
     welcome_email:
       welcome_email_subject: "Velkommen til %{service_name}!"
       welcome_to_marketplace: "Velkommen til %{service_name}! Vi er glade for å ha deg med."
@@ -1604,12 +1709,22 @@ nb:
       has_posted_a_new_listing: "%{author_name} har lagt ut en ny annonse:"
       you_are_receiving_this_because: "Du mottok denne varslingen fordi du følger %{author_name}"
       view_listing: "Se annonse"
+    new_listing_by_followed_person_v2:
+      headline: ~
+      has_posted_a_new_listing: ~
+      you_are_receiving_this_because: ~
+      view_listing: ~
+      cant_click: ~
     new_member_notification:
       subject: ~
       new_member_has_joined: "Et nytt medlem har registrert seg på %{community}. Vedkommende må kanskje fremdeles bekrefte sin e-postadresse."
       this_is_automatic_message: "Dette er en automatisk melding sendt til administratorer av %{community}."
       person_name: "Navn:"
       person_email: "E-post:"
+    new_member_notification_v2:
+      headline: ~
+      new_member_has_joined: ~
+      view_profile: ~
     listing_submited_for_review:
       subject: ~
       there_is_a_new_listing_to_review: ~
@@ -1636,6 +1751,45 @@ nb:
       sum: ~
       starter: ~
       provider: ~
+    new_transaction_v2:
+      subject: ~
+      there_is_a_new_transaction: ~
+      a_new_transaction: ~
+      listing: ~
+      sum: ~
+      starter: ~
+      provider: ~
+      view_transaction: ~
+    transaction_cancel_flow:
+      the_order_about: ~
+      you_can_contact_the_marketplace_team: ~
+      you_can_now_give_feedback: ~
+      give_feedback_to: ~
+    transaction_disputed:
+      subject: ~
+      subject_admin: ~
+      order_about: ~
+      the_order_has_been_canceled: ~
+      the_order_between_buyer_and_seller_has_been_canceled: ~
+      the_marketplace_has_been_notified: ~
+      contact_the_marketplace_team: ~
+      you_must_now_decide: ~
+      learn_more_about: ~
+      review_the_transaction: ~
+    transaction_refunded:
+      subject: ~
+      marketplace_team_has_approved_the_cancellation: ~
+      you_should_receive_a_refund_soon: ~
+    transaction_cancellation_dismissed:
+      subject: ~
+      marketplace_team_has_rejected_the_cancellation: ~
+    transaction_commission_charge_failed:
+      subject: ~
+      transaction_about: ~
+      the_commission_of_the_transaction: ~
+      this_usually_means: ~
+      if_you_would_like_to_investigate: ~
+      contact_the_seller: ~
   error_messages:
     booking:
       booking_failed_payment_voided: "Reservasjonen feilet på grunn av en uventet feil. Vennligst prøv igjen senere. Du har ikke blitt belastet for noe beløp."
@@ -1667,6 +1821,8 @@ nb:
       generic_error: ~
       accept_authorization_error: ~
       reject_authorization_error: ~
+      card_declined: ~
+      expired_card: ~
   error_pages:
     back_to_kassi_front_page: "Tilbake til forsiden"
     error_404:
@@ -1709,6 +1865,9 @@ nb:
       section_with_this_id_already_exists: ~
       listing_with_this_id_does_not_exist: ~
       presence: ~
+      username_is_invalid: ~
+      domain_name_is_invalid: ~
+      only_supported_variables: ~
   event_feed_events:
     accept:
       has_accepted_lend_item: "%{offerer_name} aksepterte å låne ut %{listing_title} til %{requester_name} %{time_ago}."
@@ -2085,8 +2244,10 @@ nb:
         other: "Nettstedet vil være offline i %{count} minutter"
       automatically_logged_out_please_sign_in: "Du har blitt logget ut automatisk. Vennligst logg inn igjen."
       stripe_you_account_balance_is_not_0: ~
+      stripe_balance_for_username_is_not_0: ~
       visit_admin: ~
       visit_admin_link: ~
+      an_error_occurred_when_saving_your_information: ~
     settings:
       account: Brukerkonto
       notifications: Varslinger
@@ -2097,6 +2258,8 @@ nb:
       payments: Betalinger
       listings: ~
       listings_search_placeholder: ~
+      transactions_search_placeholder: ~
+      transactions: ~
   listings:
     bubble_listing_not_visible:
       listing_not_visible: "Du har ikke tillatelse til å se denne annonsen."
@@ -2210,6 +2373,7 @@ nb:
       origin:
         location: Sted
         origin: Opprinnelse
+        the_exact_location: ~
       send_button:
         save_listing: "Lagre annonse"
         submit_for_review: ~
@@ -2386,6 +2550,7 @@ nb:
       night: natt
       nights: netter
       invalid_parameters: "Ugyldig verdi for ny betaling"
+      select_delivery_method: ~
     transaction_agreement_checkbox:
       read_more: Vis.
     stripe_payment:
@@ -2708,6 +2873,8 @@ nb:
       editing_profile_of: ~
       format_markdown_link: ~
       format_markdown: ~
+      username: ~
+      username_description: ~
     save_information: "Lagre innstillinger"
   shipping_address:
     shipping_address: Leveringsadresse
@@ -2885,7 +3052,7 @@ nb:
         night: natt
         week: uke
         month: måned
-      edit_availability_header: ~
+      edit_availability_header: Tilgjengelighet
       save_and_close_availability_editing: "Lagre og lukk"
       confirm_discarding_unsaved_availability_changes_explanation: "Du har ulagrede endringer i tilgjengelighets-informasjonen. Hvis du fortsetter, vil disse endringene gå tapt."
       confirm_discarding_unsaved_availability_changes_question: "Er du sikker på at du vil forkaste endringene dine?"
@@ -2935,6 +3102,10 @@ nb:
         zero: brukere
         one: bruker
         other: brukere
+      transaction:
+        zero: transaksjoner
+        one: transaksjon
+        other: transaksjoner
     previous_label: "&#8592; Forrige"
     next_label: "Neste &#8594;"
     page_gap: "&hellip;"
@@ -3040,15 +3211,19 @@ nb:
     form_verification:
       personal_id_number: ~
       document: ~
+      document_back: ~
       send_verification: ~
       need_verification: ~
       additional_document: ~
+      additional_document_back: ~
+      files_need_to_be: ~
     form_pin:
       social_insurance_number: ~
       social_security_number: ~
       ssn_last_4: ~
       hong_kong_identity_card: ~
       singapore_identity_card: ~
+      mexico_id_number: ~
       messages:
         social_insurance_number: ~
   payment_settings:
@@ -3079,8 +3254,6 @@ nb:
         id: ~
         title: ~
         paragraph: ~
-        button_color: ~
-        button_color_hover: ~
         button_title: ~
         button_path: ~
         button_path_string: ~
@@ -3088,7 +3261,6 @@ nb:
         background_image_variation: ~
         background_color: ~
         background_color_string: ~
-        icon_color: ~
       landing_page_version/section/listings:
         listing_1_id: ~
         listing_2_id: ~

@@ -229,6 +229,7 @@ ko:
         miles: 마일
         show_only_nearby: "위치 검색을 사용하여 주변 목록만 표시"
         allow_users_to_add_location: ~
+        fuzzy_location: ~
         listing_preferences: "목록 환경설정"
         transaction_preferences: "주문 환경 설정"
         show_listing_publishing_date: "목록 페이지에 목록 게시 날짜 표시"
@@ -274,6 +275,10 @@ ko:
         ban_user_confirmation: "이렇게하면 마켓 플레이스에서 사용자가 삭제되고 사용자가 이 계정으로 사이트에 다시 액세스하지 못하게됩니다. 계속 하시겠습니까?"
         unban_user_confirmation: "이렇게하면 마켓 플레이스의 사용자가 차단되고이 계정으로 사이트에 다시 액세스 할 수 있습니다. 계속 하시겠습니까?"
         ban_me_error: "본인의 계정을 비활성화 할 수는 없습니다."
+        have_ongoing_transactions: ~
+        only_delete_disabled: ~
+        delete_info1: ~
+        delete_info2: ~
         search: 검색
         search_by_name_email: "이름, 이메일 또는 대화명으로 찾기"
         reset_search: "전체 보기"
@@ -293,6 +298,7 @@ ko:
         unconfirmed_user: ~
         resend: ~
         cancel: ~
+        confirm: ~
         user_didnt_complete_the_signup_process: ~
         pending_user: ~
       new_layout:
@@ -302,6 +308,7 @@ ko:
         enabled_for_all: "모두 사용"
         new_topbar: "새로운 최상위바 (모든 페이지에 표시됨)"
         searchpage: "새 검색 페이지 (새 최상위 바가 필요함)"
+        new_email_templates: ~
       social_media:
         social_media: "소셜 미디어"
         logo: ~
@@ -329,7 +336,6 @@ ko:
         invalid_facebook_connect_secret: "클라이언트 비밀은 a에서 f까지의 숫자와 문자만 포함해야 합니다."
         enable_facebook_login: "페이스북 계정으로 로그인 허용"
         save: "설정 저장"
-        add_another_image: "새 이미지 추가"
         google_connect: ~
         google_instructions_link_text: ~
         google_developers_console: ~
@@ -392,6 +398,10 @@ ko:
         robots_info: ~
         robots_info_link_text: ~
         robots_info_2: ~
+        google_search_console: ~
+        google_search_console_paragraph1: ~
+        google_search_console_these_instructions: ~
+        google_search_console_paragraph2: ~
         save: ~
       analytics:
         analytics: 분석
@@ -404,6 +414,10 @@ ko:
         sharetribe_analytics_instructions_link_text: ~
         end_user_analytics: ~
         save: "설정 저장"
+        google_tag_manager: ~
+        gtm_paragraph_1: ~
+        gtm_paragraph_2: ~
+        learn_how_to_configure_gtm: ~
       logo_link:
         title: ~
         info: ~
@@ -452,10 +466,13 @@ ko:
           confirmed: ~
           paid: ~
           canceled: ~
+          disputed: ~
           preauthorized: ~
           rejected: ~
           payment_intent_requires_action: ~
           payment_intent_action_expired: ~
+          refunded: ~
+          dismissed: ~
         headers:
           conversation: "대화 목록"
           listing: 목록
@@ -475,6 +492,7 @@ ko:
           paid: 결제됨
           confirmed: 완결됨
           canceled: 취소됨
+          disputed: ~
           initiated: "PayPal 결제 대기중"
           pending_ext: "PayPal 결제 대기중"
           none:
@@ -488,8 +506,11 @@ ko:
             paid: 지불됨
             confirmed: 확인됨
             canceled: 취소됨
+            disputed: ~
             initiated: "PayPal 결제 대기중"
             pending_ext: "PayPal 결제 대기중"
+            refunded: ~
+            dismissed: ~
           stripe:
             free: 대화
             pending: 대기중
@@ -499,11 +520,14 @@ ko:
             paid: 지불됨
             confirmed: 확인됨
             canceled: 취소됨
+            disputed: ~
             initiated: "스트라이프 결제 대기중"
             pending_ext: "스트라이프 결제 대기중"
             payment_intent_requires_action: ~
             payment_intent_action_expired: ~
             payment_intent_failed: ~
+            refunded: ~
+            dismissed: ~
         not_available: "이용 불가"
       conversations:
         conversations: "대화 보기"
@@ -642,36 +666,33 @@ ko:
         contact_us: ~
         you_can_now_use_a_custom_domain: ~
         would_you_like_to_change_domain: ~
+        change_your_sharetribe_domain: ~
+        only_letters_numbers_and_hyphens_can_be_used: ~
+        when_you_change_your_sharetribe_domain: ~
+        would_you_like_to_proceed: ~
+        change: ~
       landing_pages:
         landing_pages: ~
         info_1: ~
         info_2: ~
-        info_2_preview_text: ~
-        info_2_details_text: ~
-        info_2_design_text: ~
+        info_2_help_center: ~
         info_3: ~
         info_4: ~
         editor_title: ~
         editor_info: ~
         preview: ~
         set_live: ~
-        headers:
-          section_id: ~
-          section_type: ~
-          version: ~
-          released: ~
-        add_new_version: ~
-        new_version: ~
-        edit_version: ~
         add_new_section: ~
         select_section_type: ~
+        this_version_is_not_released: ~
+        latest_version_released: ~
+        check_it_out: ~
         form:
-          version: ~
           save: ~
+          cancel: ~
         sections:
           identifier: ~
           kind: ~
-          variation: ~
           new: ~
           edit: ~
           remove_section_confirmation: ~
@@ -685,8 +706,6 @@ ko:
           video: ~
           new_section:
             categories: ~
-            footer: ~
-            hero: ~
             info_single_column: ~
             info_multi_column_2: ~
             info_multi_column_3: ~
@@ -703,11 +722,17 @@ ko:
             listings: ~
             locations: ~
             video: ~
+      attachments:
+        delete: ~
+        or_change: ~
     landing_page_versions:
       sections:
+        content:
+          title: ~
         hero:
           hero_title: ~
           hero_description: ~
+          basic_details_tab: ~
         footer:
           footer_title: ~
           footer_style: ~
@@ -720,6 +745,10 @@ ko:
           cta_enabled: ~
           cta_text: ~
           cta_url: ~
+          text_placeholder: ~
+          url_placeholder: ~
+        background_selector:
+          title: ~
         background_image_overlay:
           background_image: ~
           background_image_info: ~
@@ -780,6 +809,7 @@ ko:
           main_title: ~
           column_header: ~
           column_title: ~
+          web_viewer: ~
           column_icon_info: ~
           column_icon: ~
           column_paragraph: ~
@@ -787,14 +817,15 @@ ko:
           column_button_text: ~
           column_button_url: ~
         listings:
+          listings_to_feature: ~
           you_need_to_add_the_listing_ids: ~
         video:
           text: ~
-          youtube_video_id: ~
           autoplay: ~
           autoplay_no: ~
           autoplay_muted: ~
           info: ~
+          youtube_video_id_info: ~
     custom_fields:
       edit:
         edit_listing_field: "항목 '%{field_name}' 편집"
@@ -1130,6 +1161,8 @@ ko:
         waiting_for_fulfill_and_complete: ~
         buyer: ~
         provider: ~
+        delivery: ~
+        shipping_to: ~
         buyer_pays: ~
         marketplace_collects: ~
         buyer_service_fee_label: ~
@@ -1137,6 +1170,8 @@ ko:
         provider_receives: ~
         admin_info_text: ~
         manage_reviews: ~
+        you_should_investigate: ~
+        learn_more: ~
   common:
     edit_page: "페이지 편집"
     default_community_slogan: "커뮤니티 마켓플레이스"
@@ -1232,7 +1267,7 @@ ko:
       stripe-fee_label: "결제 처리 수수료"
     confirm:
       confirm_description: "피드백을 작성하시려면 거래 완료 여부를 확인해주세요."
-      cancel_description: "거래가 정상적으로 진행되지 않은 경우 '부적합'을 입력해주세요. 이 경우 피드백을 작성하실 수 있으며 불만 내용을 보내실 수 있습니다."
+      cancel_description_team: ~
       cancel_payed_description: "귀하의 요청이 수락되었지만 취소할 생각이 있으시면, 결제 전에 요청을 취소 할 수 있습니다."
       canceling_payed_transaction: "거래 취소"
       confirm: "표시 완료"
@@ -1281,6 +1316,10 @@ ko:
         held_payment: ~
         held_payment_wo_sum: ~
         confirmed_request: ~
+      canceled_the_order: ~
+      marked_as_refunded: ~
+      dismissed_the_cancellation: ~
+      payment_has_now_been_transferred: ~
     new:
       message: 메세지
       message_to: "%{author_name}에게 보내는 메시지"
@@ -1355,6 +1394,18 @@ ko:
           verify: "PayPal 계정을 확인할 때까지 기다리는 중입니다."
       stripe:
         waiting_confirmation_from_requester: ~
+      order_canceled: ~
+      waiting_for_marketplace_review: ~
+      marketplace_notified: ~
+      contact_them: ~
+      refunded: ~
+      dismissed: ~
+      order_refunded: ~
+      you_should_receive_refund_soon: ~
+      issue_with_the_refund: ~
+      do_you_disagree: ~
+      contact_the_marketpalce_team: ~
+      order_cancellation_dismissed: ~
     status_link:
       accept_offer: "제안 승인"
       accept_request: "요청 승인"
@@ -1366,6 +1417,8 @@ ko:
       reject_preauthorized_request: "다음 기회에"
       confirm: "표시 완료"
       cancel: 분쟁
+      mark_as_refunded: ~
+      dismiss: ~
   feedback:
     feedback_subject: "%{service_name}의 새로운 피드백"
     feedback_body: "%{author_name_and_email}이 %{service_name}에서 다음 피드백을 보냈습니다."
@@ -1411,11 +1464,17 @@ ko:
       if_will_not_happen_you_should_cancel: "만일 이주문이 어떤 이유로 완료되지 않을거라 생각한다면, 이 %{cancel_it_link}를 클릭해서 취소 할 수 있습니다."
       cancel_it_link_text: 취소하시겠습니까?
       automatic_confirmation: "요청이 수락된 후 %{days_to_automatic_confirmation} 일 이내에 주문을 확인하거나 취소하지 않으면 자동 완성으로 표시됩니다."
+    confirm_reminder_v2:
+      headline: ~
+      you_have_not_yet_confirmed_or_canceled_request: ~
     payment_settings_reminder:
       remember_to_add_payment_details: "결제를 받으려면 결제 세부 사항을 추가해야합니다."
       you_have_added_listing_with_payment: "%{listing_link} 목록에 결제를 추가했습니다. 그러나 아직 결제 세부 사항을 추가하지 않았습니다. 결제를 받으려면 결제 정보를 추가해야합니다."
       please_go_to_payment_settings: "%{payment_settings_link}로 이동하여 필요한 결제 정보를 입력하십시오."
       payment_settings_link: "결제 설정"
+    payment_settings_reminder_v2:
+      fill_payout_details: ~
+      you_have_added_listing_with_payment: ~
     transaction_confirmed:
       here_is_a_message_from: "%{other_party_given_name}의 메시지는 다음과 같습니다."
       request_marked_as_confirmed: "주문이 완료되었습니다 - 피드백을 잊지 마세요"
@@ -1427,12 +1486,24 @@ ko:
       stripe:
         has_marked_request_as_confirmed: ~
       team_title: ~
+    transaction_confirmed_v2:
+      headline_confirmed: ~
+      headline_canceled: ~
+      stripe:
+        has_marked_request_as_confirmed: ~
+      can_give_feedback: ~
+      team_title: ~
     transaction_automatically_confirmed:
       subject: "주문 자동 완성 - 피드백을 해주세요"
       we_have_marked_request_as_confirmed: "'%{request}'에 대한 주문을 완료했습니다. 요청이 수락된 후 %{days_passed} 일이 지났으므로 주문이 자동으로 완료되었습니다."
+    transaction_automatically_confirmed_v2:
+      we_have_marked_request_as_confirmed: ~
+      order_automatically_confirmed: ~
     booking_transaction_automatically_confirmed:
       subject: "주문 자동 완성 - 피드백을 해주세요"
       we_have_marked_request_as_confirmed: "'%{request}'에 대한 주문을 완료했습니다. 예약 기간이 끝난 후 하루가 지나서 요청이 자동으로 완료되었습니다."
+    booking_transaction_automatically_confirmed_v2:
+      order_automatically_confirmed: ~
     automatically_confirmed_footer:
       giving_feedback_is_good_idea: "이제 %{other_party_given_name}에게 피드백을 줄 수 있습니다. 항상 피드백을 주는 것이 좋습니다. 모든 것이 잘 진행되면 %{other_party_given_name}이(가) 신뢰할 수 있음을 다른 사람에게 알리도록해야합니다. 문제가 발생하면 해당 문제도 언급하는 것이 좋습니다."
       give_feedback_to: "%{other_party_given_name}에게 피드백 보내기"
@@ -1442,8 +1513,13 @@ ko:
       need_to_confirm: "%{service_name}에 가입하시려면 아래의 버튼을 눌러 이메일 주소를 확인해주세요."
       confirmation_link_text: "주소 확인"
       or_paste_link: "또는 다음 링크를 브라우저의 주소 표시 줄에 복사 할 수 있습니다."
+    confirmation_instructions_v2:
+      headline: ~
+      need_to_confirm: ~
+      confirmation_link_text: ~
     common:
       hey: "%{name}님 안녕하세요,"
+      hi: ~
       kassi_team: "%{service_name}팀"
       thanks: "고맙습니다,"
       dont_want_to_receive_these_emails: "더이상 이 이메일을 받길 원하지 않으세요?"
@@ -1455,6 +1531,7 @@ ko:
       unsubscribe_from_these_emails: "이메일 수신 거부"
       unsubscribe_from_invitation_emails_info: "%{service_name}의 회원이 귀하를 초대했기 때문에이 이메일을 받았습니다."
       unsubscribe_from_invitation_emails: "초대 이메일에서 %{service_name} 가입을 취소합니다."
+      here_is_your_receipt: ~
     conversation_status_changed:
       has_accepted_your_offer: "%{accepter}가 당신의 제안 %{listing}을 승인하였습니다."
       has_accepted_your_request: "%{accepter}가 당신의 요청 %{listing}을 승인하였습니다."
@@ -1468,12 +1545,19 @@ ko:
       you_can_now_pay_to: "이제 요청 된 금액을 %{payment_receiver} (으)로 결제 할 수 있습니다."
       pay_now: "지금 결제하세요"
       remember_to_confirm: "주문이 완료되면 완료된 것으로 표시해야합니다. 주문이 이행되지 않으면 %{days_to_automatic_confirm}} 일 이내에 취소하십시오. 그렇지 않으면 자동으로 완료로 표시됩니다."
+    conversation_status_changed_v2:
+      has_accepted_your_request: ~
+      has_accepted_your_request_text: ~
+      has_rejected_your_request: ~
+      has_rejected_your_request_text: ~
     invitation_to_kassi:
       hi: 안녕하세요!
       you_have_been_invited_to_kassi: "%{inviter}님이 당신을 %{service_name}에 초대하였습니다"
       here_is_a_message_from: "%{inviter}님으로부터 메세지가 도착했습니다:"
       join_now: "지금 가입하세요"
       invitation_code: "초대코드 : %{code}"
+    invitation_to_kassi_v2:
+      headline: ~
     new_comment:
       has_commented_your_listing_in_kassi: "%{author} 님이 귀하의 '%{listing}'에 댓글을 달았습니다."
       view_comment: "코멘트 보기"
@@ -1484,6 +1568,9 @@ ko:
       view_message: "메세지 보기"
       has_sent_you_a_message_in_kassi: "%{sender}가 %{service_name}에 대해 당신에게 메세지를 보냈습니다."
       you_have_a_new_message: "%{sender_name}에게서 %{service_name}에 대한 새로운 메세지"
+    new_message_v2:
+      headline: ~
+      reply: ~
     new_payment:
       new_payment: "새 결제를 받았습니다"
       price_per_unit_type: "%{unit_type} 당 가격 :"
@@ -1505,6 +1592,10 @@ ko:
       you_have_received_new_payment: "%{payer_full_name} 님이 <b> %{listing_title} </ b>에 대해 <b> %{payment_sum} </ b>을(를) 지불하셨습니다. 여기에 영수증이 있습니다."
       stripe:
         you_have_received_new_payment: ~
+    payment_receipt_to_seller_v2:
+      headline: ~
+      main_text_stripe: ~
+      price_breakdown: ~
     payment_receipt_to_payer:
       receipt_of_payment: "결제 영수증"
       you_have_made_new_payment: "<b> %{listing_title} </ b>에 대해 %{recipient_full_name}에 <b> %{payment_sum} </ b>을 지불했습니다. 여기에 지불 영수증이 있습니다."
@@ -1520,6 +1611,9 @@ ko:
       stripe_gateway_fee: "스트라이프 수수료"
       paypal_gateway_fee: "페이팔 수수료"
       money_will_be_transferred: "a) 귀하가 요청 완료를 표시했거나 b) 결제한 날 %{automatic_confirmation_days} 일이 경과하면 %{recipient_name}(으)로 이체됩니다."
+    payment_receipt_to_payer_v2:
+      headline: ~
+      you_have_made_new_payment: ~
     paypal_new_payment:
       paypal_gateway_fee: "페이팔 수수료"
       shipping_total: "배송:"
@@ -1549,6 +1643,8 @@ ko:
       has_given_you_feedback_in_kassi: "%{name}이/가 %{service_name}에 대한 피드백을 남겼습니다."
       you_can_give_feedback_to: "아직 %{name}에게 피드백을 남기지 않았습니다."
       view_feedback: "피드백 보기"
+    new_testimonial_v2:
+      headline: ~
     new_update_to_listing:
       listing_you_follow_has_been_updated: "관심항목에 변경 사항이 생겼습니다."
       has_updated_listing_you_follow_in_kassi: "당신이 %{service_name}에서 팔로우하는 %{author}이/가 목록 '%{listing}'을/를 업데이트 했습니다."
@@ -1564,6 +1660,8 @@ ko:
       reduce_email_footer_text: "이메일이 너무 많습니까? %{settings_link} 또는 %{unsubscribe_link}"
       settings_link_text: "여기에서 이메일 설정 수정하세요"
       unsubscribe_link_text: "구독 취소"
+    community_updates_v2:
+      headline: ~
     newsletter:
       hi: "%{name}님 안녕하세요,"
       newest_offers: "진행 중인 제안"
@@ -1575,6 +1673,10 @@ ko:
     testimonial_reminder:
       remember_to_give_feedback_to: "알림: %{name}에게 피드백을 남겨주세요."
       you_have_not_given_feedback_yet: "아직 %{name}에게 '%{event}' 이벤트에 대한 피드백을 남기지 않았습니다. %{given_name}이/가 이벤트에서 해야할 일에 대해 피드백을 남겨주세요."
+    testimonial_reminder_v2:
+      headline: ~
+      you_have_not_given_feedback_yet: ~
+      leave_feedback: ~
     transaction_preauthorized:
       subject: "%{requester}이(가) 관심을 갖고 %{service_name}에 게시 된 %{listing_title}의 결제를 승인했습니다."
       transaction_requested_by_user: "좋은 소식! %{requester}은(는) \"%{listing_title}\"에 관심이 있으며 이 목록에 대한 결제를 승인했습니다."
@@ -1583,11 +1685,16 @@ ko:
       if_you_do_accept_stripe: "이 기간 내에 요청을 수락하면 지불이 처리됩니다. %{listing_title}을 %{requester} (으)로 배송하면 은행 계좌로 바로 송금됩니다."
       if_you_do_not_accept: "이 기간 내에 요청을 거부하거나 동의하지 않으면 트랜잭션이 자동으로 취소되며 %{requester}는 청구되지 않고 지불되지 않습니다."
       click_here_to_reply: "요청에 응답하려면 여기를 클릭하십시오."
+    transaction_preauthorized_v2:
+      headline: ~
     transaction_preauthorized_reminder:
       subject: "%{requester}(으)로부터 목록 %{listing_title}에 대한 요청을 수락하는 것을 잊지 마십시오."
       remember_to_accept: "\"%{listing_title}\"목록에 대해 %{requester}의 요청을 수락하는 것을 잊지 마십시오. %{requester}는 이미 그 목록에 대해 결제했습니다. 결제를 받으려면 요청을 수락해야합니다."
       one_day_left: "하루 이내에 요청을 수락하지 않으면 요청이 자동으로 거절되고 결제되지 않습니다."
       click_here_to_reply: "요청에 응답하려면 여기를 클릭하십시오."
+    transaction_preauthorized_reminder_v2:
+      headline: ~
+      remember_to_accept: ~
     welcome_email:
       welcome_email_subject: "%{service_name}에 오신 것을 환영합니다."
       welcome_to_marketplace: "%{service_name}에 오신 것을 환영합니다! 함께하게되어서 매우 기쁩니다."
@@ -1599,12 +1706,22 @@ ko:
       has_posted_a_new_listing: "%{author_name}이(가) 새 목록을 올렸습니다."
       you_are_receiving_this_because: "당신은 %{author_name}을/를 팔로우하기 때문에 이 알림을 받았습니다."
       view_listing: 목록보기
+    new_listing_by_followed_person_v2:
+      headline: ~
+      has_posted_a_new_listing: ~
+      you_are_receiving_this_because: ~
+      view_listing: ~
+      cant_click: ~
     new_member_notification:
       subject: ~
       new_member_has_joined: "새 회원이 %{community}에 가입했습니다. 이메일 주소를 확인해야 할 수도 있습니다."
       this_is_automatic_message: "이것은 %{community}의 관리자에게 발송된 자동 메시지입니다."
       person_name: "이름:"
       person_email: "이메일:"
+    new_member_notification_v2:
+      headline: ~
+      new_member_has_joined: ~
+      view_profile: ~
     listing_submited_for_review:
       subject: ~
       there_is_a_new_listing_to_review: ~
@@ -1631,6 +1748,45 @@ ko:
       sum: ~
       starter: ~
       provider: ~
+    new_transaction_v2:
+      subject: ~
+      there_is_a_new_transaction: ~
+      a_new_transaction: ~
+      listing: ~
+      sum: ~
+      starter: ~
+      provider: ~
+      view_transaction: ~
+    transaction_cancel_flow:
+      the_order_about: ~
+      you_can_contact_the_marketplace_team: ~
+      you_can_now_give_feedback: ~
+      give_feedback_to: ~
+    transaction_disputed:
+      subject: ~
+      subject_admin: ~
+      order_about: ~
+      the_order_has_been_canceled: ~
+      the_order_between_buyer_and_seller_has_been_canceled: ~
+      the_marketplace_has_been_notified: ~
+      contact_the_marketplace_team: ~
+      you_must_now_decide: ~
+      learn_more_about: ~
+      review_the_transaction: ~
+    transaction_refunded:
+      subject: ~
+      marketplace_team_has_approved_the_cancellation: ~
+      you_should_receive_a_refund_soon: ~
+    transaction_cancellation_dismissed:
+      subject: ~
+      marketplace_team_has_rejected_the_cancellation: ~
+    transaction_commission_charge_failed:
+      subject: ~
+      transaction_about: ~
+      the_commission_of_the_transaction: ~
+      this_usually_means: ~
+      if_you_would_like_to_investigate: ~
+      contact_the_seller: ~
   error_messages:
     booking:
       booking_failed_payment_voided: "예상치 못한 오류로 인해 예약에 실패했습니다. 나중에 다시 시도 해주십시오. 결제가 청구되지 않았습니다."
@@ -1662,6 +1818,8 @@ ko:
       generic_error: "결제 프로세스 중에 오류가 발생했습니다. Stripe의 결제를 완료 할 수 없습니다."
       accept_authorization_error: ~
       reject_authorization_error: ~
+      card_declined: ~
+      expired_card: ~
   error_pages:
     back_to_kassi_front_page: "앞 페이지로 돌아가기"
     error_404:
@@ -1704,6 +1862,9 @@ ko:
       section_with_this_id_already_exists: ~
       listing_with_this_id_does_not_exist: ~
       presence: ~
+      username_is_invalid: ~
+      domain_name_is_invalid: ~
+      only_supported_variables: ~
   event_feed_events:
     accept:
       has_accepted_lend_item: "%{offerer_name}이 %{listing_title}을 %{requester_name} %{time_ago}로 대여하기로 동의했습니다."
@@ -2079,8 +2240,10 @@ ko:
         other: "%{count} 분 후에 웹 사이트가 유지 관리를 위해 오프라인 상태가됩니다."
       automatically_logged_out_please_sign_in: "자동으로 로그 아웃되었습니다. 다시 로그인하십시오."
       stripe_you_account_balance_is_not_0: ~
+      stripe_balance_for_username_is_not_0: ~
       visit_admin: ~
       visit_admin_link: ~
+      an_error_occurred_when_saving_your_information: ~
     settings:
       account: 계정
       notifications: 공지
@@ -2091,6 +2254,8 @@ ko:
       payments: 결제
       listings: 리스트
       listings_search_placeholder: "리스트명으로 찾기"
+      transactions_search_placeholder: ~
+      transactions: ~
   listings:
     bubble_listing_not_visible:
       listing_not_visible: "이 리스트를 볼 수 있는 권한이 없습니다."
@@ -2204,6 +2369,7 @@ ko:
       origin:
         location: 위치
         origin: 원산지
+        the_exact_location: ~
       send_button:
         save_listing: "포스팅 하기"
         submit_for_review: "검토를 위해 제출하기"
@@ -2380,6 +2546,7 @@ ko:
       night: 박
       nights: "숙박 일수:"
       invalid_parameters: "새 거래의 값이 잘못되었습니다."
+      select_delivery_method: ~
     transaction_agreement_checkbox:
       read_more: 보기
     stripe_payment:
@@ -2702,6 +2869,8 @@ ko:
       editing_profile_of: ~
       format_markdown_link: "마크다운 사용하여 편집"
       format_markdown: "%{link} 할 수 있습니다."
+      username: ~
+      username_description: ~
     save_information: "정보 저장하기"
   shipping_address:
     shipping_address: 배송주소
@@ -3031,15 +3200,19 @@ ko:
     form_verification:
       personal_id_number: "개인 ID 번호"
       document: "확인 문서"
+      document_back: ~
       send_verification: "확인 보내기"
       need_verification: "추가 확인 필요"
       additional_document: ~
+      additional_document_back: ~
+      files_need_to_be: ~
     form_pin:
       social_insurance_number: "사회 보장 번호 (SIN)"
       social_security_number: "사회 보장 번호 (SSN)"
       ssn_last_4: ~
       hong_kong_identity_card: "홍콩 신분증 번호 (HKID)"
       singapore_identity_card: "국가 등록 신분증 (NRIC) 또는 외국인 식별 번호 (FIN)"
+      mexico_id_number: ~
       messages:
         social_insurance_number: "유효한 SIN (Social Insurance Number)이어야합니다."
   payment_settings:
@@ -3070,8 +3243,6 @@ ko:
         id: ~
         title: ~
         paragraph: ~
-        button_color: ~
-        button_color_hover: ~
         button_title: ~
         button_path: ~
         button_path_string: ~
@@ -3079,7 +3250,6 @@ ko:
         background_image_variation: ~
         background_color: ~
         background_color_string: ~
-        icon_color: ~
       landing_page_version/section/listings:
         listing_1_id: ~
         listing_2_id: ~
